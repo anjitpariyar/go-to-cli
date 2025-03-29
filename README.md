@@ -13,38 +13,33 @@ A simple command-line interface (CLI) application written in Go to manage your t
 Make sure you have Go installed on your system. Clone this repository and navigate to its directory.
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone git@github.com:anjitpariyar/go-to-cli.git
+cd go-to-cli
+```
 
 ## Usage
 -Run the program using . The following commands are supported:
 -Add a To-Do
--Add a new to-do item to the list.
 
 ```bash
-
 go run ./ --add "This is a todo"
-
 ```
 
-
+-Remove a To-Do
 ```bash
-
 go run ./ --remove 1
-
-
 ```
-```bash
 
+-Toggle a To-Do
+```bash
 go run ./ --toggle 1
-
-
 ```
+
+-Update a To-Do
 ```bash
-go run ./ --add "This is a todo"
+go run ./ --update 0:"Buy groceries and snacks"
 ```
+-Show To-Do
 ```bash
-
-go run ./ --add "This is a todo"
-
+go run ./ --show
 ```
